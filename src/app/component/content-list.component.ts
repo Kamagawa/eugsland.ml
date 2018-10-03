@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {PostService} from '../service/post.service';
 import {Post} from '../post';
+import { style } from '@angular/core/src/animation/dsl';
 
 @Component({
   selector: 'app-content-list',
-  templateUrl: './content-list.component.html'
+  templateUrl: './content-list.component.html',
+  styleUrls: ['./content-list.component.css']
 })
 
 
