@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {PostService} from '../service/post.service';
-import {Post} from '../post';
-import { style } from '@angular/core/src/animation/dsl';
+import { Post } from '../../post';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-content-list',
@@ -10,19 +9,12 @@ import { style } from '@angular/core/src/animation/dsl';
 })
 
 
-export class ContentListComponent implements OnInit {
+export class ContentListComponent {
   posts: Post[];
+  url = 'https://eugenewangme.firebaseio.com/test/exp.json'; 
 
-  constructor(private postService: PostService ) {
-    this.posts = [];
-  }
-
-  ngOnInit() {
-    this.getPosts();
-  }
-
-  getPosts(): void {
-    this.postService.getPostes()
+  constructor(private http: HttpClient ) {
+    this.http.get(this.url)
       .subscribe(posts => this.posts = Object.values(posts));
   }
 

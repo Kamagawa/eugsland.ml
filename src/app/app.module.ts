@@ -2,11 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
-
-import { AppComponent, AppNavbarComponent, ContentListComponent, HeaderComponent, BlogComponent, YoutubeComponent, FooterComponent } from './component';
-import { PostService, MessageService, RSSParserService } from './service';
+import { AppComponent } from './component/app.component';
+import { AppNavbarComponent } from './component/app-navbar/app-navbar.component';
+import { ContentListComponent } from './component/content-list/content-list.component';
+import { HeaderComponent } from './component/header.component';
+import { YoutubeComponent } from './component/youtube.component';
+import { FooterComponent } from './component/footer.component';
 
 // https://github.com/cornflourblue/angular-6-registration-login-example
+
 
 @NgModule({
   declarations: [
@@ -14,7 +18,6 @@ import { PostService, MessageService, RSSParserService } from './service';
     AppNavbarComponent,
     ContentListComponent,
     HeaderComponent,
-    BlogComponent,
     YoutubeComponent,
     FooterComponent
   ],
@@ -23,23 +26,6 @@ import { PostService, MessageService, RSSParserService } from './service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [RSSParserService, PostService, MessageService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-// page 1
-//  Welcome
-//  project,
-//  video
-//  dev tools
-
-// Page 2
-//  interest dev
-//  other
-
-// Page 2:
-//  Job/Work
-//
-// page 3
-//  social: linkedin, github, insta, play
-//

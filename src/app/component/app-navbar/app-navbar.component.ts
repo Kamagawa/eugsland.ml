@@ -1,4 +1,4 @@
-import { keys } from '../../environments/keys';
+import { keys } from '../../../environments/keys';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
