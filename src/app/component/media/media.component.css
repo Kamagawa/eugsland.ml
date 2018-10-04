@@ -1,0 +1,23 @@
+.secBody .mega{
+    min-height: 0;
+    display: block !important;
+}
+.mega {
+    min-height: 0px;
+}
+.mega img {
+
+    margin-right: 0;
+    float: none;
+    height: auto; 
+    width: 100%; 
+    margin-right: 20px;
+    margin-left: 0.01px;
+    display: block;
+}
+.mega .text {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}

@@ -94,7 +94,7 @@ linear-gradient(
     141deg,
     rgb(15, 184, 173, 0.4) 0%,
     rgb(31, 200, 219, 0.4) 51%,
-    rgb(44, 181, 232, 0.4) 75%),url('../../assets/egg0.png') no-repeat bottom center scroll;
+    rgb(44, 181, 232, 0.4) 75%),url('/../../assets/egg0.png') no-repeat bottom center scroll;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
