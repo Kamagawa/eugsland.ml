@@ -11,7 +11,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 export class MediaComponent {
   posts: Post[];
-  url = 'https://eugenewangme.firebaseio.com/test/media.json'; 
+  url = 'https://eugsland.firebaseio.com/test/media.json'; 
 
   constructor(private http: HttpClient ) {
     this.http.get(this.url)
@@ -25,6 +25,6 @@ export class MediaComponent {
 
 
   getPic(picPath) {
-    return 'https://firebasestorage.googleapis.com/v0/b/eugenewangme.appspot.com/o/' + picPath + '?alt=media';
+    return 'https://firebasestorage.googleapis.com/v0/b/eugsland.appspot.com/o/' + picPath + '?alt=media';
   }
 }

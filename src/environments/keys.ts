@@ -8,7 +8,7 @@ export class Globals {
 }
 
 export const keys = {
-  apiUrl: 'https://eugenewangme.firebaseio.com/test/',
+  apiUrl: 'https://eugsland.firebaseio.com/test/',
   me: {
     github: 'https://github.com/Kamagawa/',
     linkedin: "https://www.linkedin.com/in/eugeneywang",
