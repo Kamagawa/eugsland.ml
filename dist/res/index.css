@@ -28,7 +28,7 @@ body {
 }
 
 section{
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 }
 
 
@@ -81,11 +81,12 @@ div.hr {
 #toplevel {
     display: flex;
     flex: 1;
-    padding: 0 50px 50px 50px;
+    padding: 0 25px 25px 25px;
 }
 
 #sidebar {
-    flex: 1.15;
+  padding-left: 20px;
+    flex: 1.0;
 }
 
 #margin {
@@ -107,7 +108,7 @@ div.hr {
 }
 
 #toplevel li {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.45;
 }
@@ -151,10 +152,12 @@ h2 a{
 }
 
 #toplevel span.date {
-    font-size: 14px;
-    font-weight: 300;
-    color: #666;
-    line-height: 1.2;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.2;
+  font-style: italic;
 }
 
 #main {
@@ -171,11 +174,19 @@ h2 a{
 }
 
 #main li {
-    margin-left: 37px;
+    margin-left: 25px;
     font-size: 16px;
     color: #666;
 }
 
+#sidebar li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#toplevel p.minor {
+    font-size: 12px; color: #000000;
+}
 
 b {
     font-weight: 500;

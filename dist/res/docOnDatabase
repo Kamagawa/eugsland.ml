@@ -1,0 +1,6 @@
+Databse on Kubernetes can be set up in mostly 2 ways: 
+    1. Set up the database as a cluster on the kubernetes container
+    2. Set up the databse somewhere else
+
+Set up databse somewhere else
+This is the instance where the database is hosted at an external location. Most likely, this option is used to connect new microservice apps to
