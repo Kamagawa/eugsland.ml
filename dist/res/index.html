@@ -2,52 +2,37 @@
 <html>
 
 <head>
-  <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css"
     media="screen,projection,print" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="index.css" media="screen,projection,print" />
-
-  <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
   <div id="master">
-    <div id="header" class="center">
-      <a href="https://eugsland.firebaseapp.com/">
-        <h5>Eugene <span style="font-weight: 300">Wang</span></h5>
-      </a>
-      <p>
-        <a href="mailto:eugene.wang@uwaterloo.ca">
-          <i class="fa fa-envelope "> eugene.wang@uwaterloo.ca </i>
-        </a> |
-        <a href="tel:+14169535261">
-          <i class="fa fa-phone "> (416)953-5261 </i>
-        </a> |
-        <a href="http://eugsland.firebaseapp.com">
-          <i class="fa fa-globe "> eugsland.ml </i>
-        </a> |
-        <a href="https://github.com/kamagawa">
-          <i class="fa fa-github "> kamagawa </i>
-        </a> |
-        <a href="https://www.linkedin.com/in/eugeneywang">
-          <i class="fa fa-linkedin "> eugeneywang </i>
+    <div class="header">
+      <div class="title">
+        <a href="https://eugsland.firebaseapp.com/">
+          <h5>Eugene Wang</h5>
+          <p>seeking a <u>4 month</u> <b>fullstack</b> or <b>android</b> development position</p>
         </a>
-      </p>
+      </div>
+
+      <ul class="sidebar">
+        <li><a href="mailto:eugene.wang@uwaterloo.ca"><i class="fa fa-envelope"> eugene.wang@uwaterloo.ca </i></a></li>
+        <li><a href="tel:+14169535261"> <i class="fa fa-phone "> (416)953-5261 </i></a></li>
+        <li><a href="http://eugsland.firebaseapp.com"> <i class="fa fa-globe"> eugsland.ml </i></a></li>
+        <li><a href="https://github.com/kamagawa"> <i class="fa fa-github"> kamagawa </i></a></li>
+        <li><a href="https://www.linkedin.com/in/eugeneywang"> <i class="fa fa-linkedin"> eugeneywang </i></a></li>
+      </ul>
     </div>
     <div class="hr"></div>
     <div id="toplevel">
-	  
+
 
       <div id="main">
-
-
-
-
-
         <section id="exp">
           <h5><i class="fa fa-briefcase"></i> EXPERIENCE</h5>
 
@@ -57,25 +42,25 @@
           <span class="date float-right">Fall 2018  </span>
           <br>Tools: Java, Intellij, Spring, Docker, Kubernetes, Microservices
           <ul class="details">
-            <li>Transformed a monolithic <b>Java Spring-Boot App</b> to microservices natively hosted on <b>Google Kubernetes Cloud</b>. </li>
+            <li>Transformed a <b>java web app</b> to microservices natively hosted on <b>Google Kubernetes Cloud</b>. </li>
             <li>Integrated <b>Istio</b> for traffic managemenet and load balancing utilizing features such as ingress, envoy, mixer, pometheus and jaeger. </li>
-            <li>Organized onboarding sessions on 
-              <a href="https://www.slideshare.net/slideshow/embed_code/key/1Lx5vJomhL77oM" 
+            <li>Organized onboarding sessions on
+              <a href="https://www.slideshare.net/slideshow/embed_code/key/1Lx5vJomhL77oM"
               style="text-decoration: underline; text-decoration-color: black">
-              <b>'Microservice, Kubernetes and Istio'</b></a> for platform and DevOps team, an audience of 30 people. 
+              <b>'Microservice, Kubernetes and Istio'</b></a> for platform and DevOps team, an audience of 30 people.
             </li>
           </ul>
 
 
           <h3 class="inline"> <i> </i>
-            <b>Blackberry | Android Developer </b>
+            <b>Blackberry</b> | Android Developer
           </h3>
           <span class="date float-right">Fall 2017  </span>
           <br>Tools: Java, Intellij, Kotlin, Angular, WebRTC
           <ul class="details">
             <li>Redesigned Calendar Row architecture with abstraction over calendar providers (Google, Yahoo) to reduce computing time. </li>
             <li>Replaced costly http calls with <b>WebRTC</b> to stream data across devices.</li>
-            <li>Researched <b>Material-UI</b> and compiled animation libraries with various            
+            <li>Researched <b>Material-UI</b> and compiled animation libraries with various
                  <b>interpolation functions </b>for BlackBerry Calendar.
             </li>
           </ul>
@@ -88,7 +73,7 @@
           <ul class="details">
             <li>Scripted an <b>ETL Pipeline</b> to look up query origin and assign GeoIP. </li>
             <li>Used pipelines to collect data from multiple sources including <b>Dynatrace, Bluemix</b> to
-              <b>Elastic Cloud</b>. 
+              <b>Elastic Cloud</b>.
             </li>
           </ul>
         </section>
@@ -97,8 +82,8 @@
           <h5><i class="fa fa-tasks"></i> PROJECTS</h5>
           <a href="https://github.com/hachyEgg/hachy-android/blob/master/README.md">
           <h2 style="text-decoration: underline; text-decoration-color: black">
-              
-       
+
+
             <b>Hachy &mdash; Candle Egg with Machine Learning</b>
             <span class="date float-right">Summer 2018</span></h2>
           Microsoft Image Cup World Finalist, 3<sup>rd</sup> place in Canada
@@ -122,10 +107,10 @@
 
           <a href="https://devpost.com/software/peeker">
           <h2 style="text-decoration: underline; text-decoration-color: black">
-           
+
               <b>Peek &mdash;Eye for the Colorblind </b> <span class="date float-right">Summer 2017  </span>
-            
-          </h2> 
+
+          </h2>
           <ul>
             <li>Won 3<sup>rd</sup> out of 35 for building an android app that
               <b>detects colors of objects </b> in realtime for colorblind people.
@@ -137,50 +122,47 @@
 
 
 
-      </div> 
-	  
+      </div>
+
 	  <div id="sidebar">
       <section>
         <h5><i class="fa fa-black-tie"></i> SKILLS</h5>
         <ul>
-          <li><b>Programming Languages</b><br>Java, Kotlin, Python, C++, JavaScript</li>
-          <li><b>Android Development</b><br>Camera, Notification, Database, Rest, Material UI, Retrofit, Gson, Firebase</li>
-          <li><b>Web Development </b> <br>Angular, Java, Spring, SQL, MongoDB, Node.JS, WebRTC</li>
+          <li><b>Languages</b><br>Java, Kotlin, Python, C++, JavaScript</li>
+          <li><b>Web & Cloud </b> <br>Angular, RESTful Api, Spring, Kubernetes, Istio, SQL, MongoDB, Node.JS, WebRTC</li>
+          <li><b>Android & Mobile</b><br>Camera, bluetooth, notification, sharedPrefenrence, Material UI, Retrofit, Gson, Firebase</li>
           <li><b>Big Data and Machine Learning</b><br>OpenCV, Tensorflow, ElasticSearch, Azure ML</li>
+          <li><b>Tools & IDEs </b> <br>Git, Gerrit, Intellij, Eclipse, Visual Studio, VScode</li>
+          <li><b>Internationalization</b><br>Canadian Citizen speaking English, Chinese, Japanese</li>
         </ul>
       </section>
-
-      <section>
-        <h5 class="interests"> <i class="fa fa-certificate"></i> AWARDS & CERTIFICATES</h5>
-        <ul >
-          <li><a href="https://eugsland.firebaseapp.com/#media" style="text-decoration:none; color: black">
-            Microsoft Imagine Cup World Finalist</a></li>
-          <li><a href="https://www.youracclaim.com/badges/6a201fd6-3eba-4dde-9d17-9cfe8a2d1356" style="text-decoration:none; color: black">
-            Microsoft Technology Associate
-            <p class="minor">Introduction to Java, License 16116022</p></a>
-          </li>
-
-          <li><a href="https://www.credential.net/m0a6vl2q" style="text-decoration:none; color: black">Entrepreneurship 101
-              <p class="minor">MarS Discovery, License 10622413</p></a>
-          </li>
-        </ul>
-      </section>
-
 
       <section>
         <h5><i class="fa fa-graduation-cap"></i>EDUCATION</h5>
-        <p class="inline"><b>University of WATERLOO (2016)  <br> Mechatronics Engineering B.A.sc </br></b></p>
+        <p class="inline"><b>2A - Mechatronics Engineering<br>University of WATERLOO</b></p>
+        <br><br>
+        <h6>Technical certificates: </h6>
+        <ul>
+          <li><a href="https://www.youracclaim.com/badges/6a201fd6-3eba-4dde-9d17-9cfe8a2d1356" style="text-decoration:none; color: black">
+            Microsoft Technology Associate (<i>Java</i>)
+            <br>Microsoft, <u>License 16116022</u></a>
+          </li>
+          <li><a href="https://www.credential.net/m0a6vl2q" style="text-decoration:none; color: black">Entrepreneurship 101
+              <br>MarS Discovery, <u>License 10622413</u></a>
+          </li>
+        </ul>
       </section>
 
       <section>
         <h5 class="interests"> <i class="fa fa-heart"></i>  INTERESTS</h5>
         <ul>
-          <li>Computer Vision<br>
-            <p class="minor">Built 3 award winning apps with computer vision and image classification.</p> </li>
-        <li>Japanese Culture<br>
-            <p class="minor">Founded Japanese Culture Society, grew member from 5 to 50 and organized events at high schools with Japanese Canadian foundation.</p></li>
-        <li>History<br>
-        <p class="minor">Able to draw empires: Byzantine, Ottoman, etc.</p></li>
+          <li><b>Computer Vision</b><br>
+            Built 3 award winning apps with computer vision and image classification. </li>
+        <li><b>Japanese Culture</b><br>
+            Founded and grew Japanese Culture Society to 50 members, partnered with Japanese Canadian foundation </li>
+        <li><b>History</b><br>
+			Knows all the empires: Byzantine, Ottoman etc.
+		</li>
         </ul>
       </section>
     </div>
