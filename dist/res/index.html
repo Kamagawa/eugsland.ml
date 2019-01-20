@@ -37,87 +37,110 @@
 
       <div id="main">
         <section id="exp">
+          <h5><i class="fa fa-briefcase"></i> Summary</h5>
+
+          <div class="jobitem summary">
+            <ul >
+              <li><b>3 years</b> of experience of working in the industry developing production level
+                <b>cloud, web and android</b> applications.</li>
+              <li>Winner of <b>Microsoft Imagine Cup</b> 3<sup>rd</sup> place in Canada, and world finalist. </li>
+              <li>Increased GPA(%) from 54 to <b>79.45</b> in 2 terms.    // still rising </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="exp">
           <h5><i class="fa fa-briefcase"></i> EXPERIENCE</h5>
 
-          <div class="">
+          <div class="jobitem">
             <h3 class="inline"> <i> </i>
-              <b>CGI group | FullStack Developer </b>
+              <b>CGI group</b> | <i>FullStack Developer </i>
             </h3>
             <span class="date float-right">Fall 2018  </span>
-            <br>Tools: Java, Intellij, Spring, Docker, Kubernetes, Microservices
+            <br>Tools: Java, Intellij, Spring, Docker, Kubernetes, ElasticSearch, git, Jenkins, Mockito
             <ul class="details">
-              <li>Constructed a <b>kubernetes microservice</b> app base on an existing monolithic <b>Java Spring app</b>.</li>
+              <li>Constructed a <b>kubernetes microservice</b> app based on an existing monolithic <b>Java Spring app</b>.</li>
               <li>Reduce servcie heap usage from <b>512mb</b> down to <b>256mb</b> by manually handling SQL connections, reducing <b>caching</b> size, and reducing <b>thread</b> stack at <b>JVM</b> side. </li>
-              <li>Routed services connections with <b>TCP</b>, and <b>service lookup</b> using a nameserver to call any instance of a service on kubernetes by name rather than by ip address to a physical machine</li>
-              <li>Integrated <b>Istio</b> for traffic managemenet and load balancing, and <b>horizontal pod scaling</b>. </li>
-              <li>Uses Sleuth for distributed tracing and ElasticSearch for centralized logging. </li>
+              <li>Routed services connections with <b>TCP</b>, and perform <b>service lookup</b> using a <b>nameserver</b> to an instance of target service, rather than to a physical ip addresses. </li>
+              <li>Integrated <b>Istio</b> for traffic managemenet, load balancing, and <b>horizontal pod scaling</b>. </li>
+              <li>Uses <b>Sleuth</b> for distributed tracing and <b>ElasticSearch</b> for centralized logging. </li>
             </ul>
           </div>
 
-          <h3 class="inline"> <i> </i>
-            <b>Blackberry</b> | Android Developer
-          </h3>
-          <span class="date float-right">Fall 2017  </span>
-          <br>Tools: Java, Intellij, Kotlin, Angular, WebRTC
-          <ul class="details">
-            <li>Added a layer of Abstraction for Calendar Row to remove dependency on type of calendar providers (Google, Yahoo) to reduce computing time. </li>
-            <li>Replaced repetitive <b>HTTP requests</b> with <b>WebRTC</b> to stream data across devices.</li>
-            <li>Implemented <b>asynchronous loading</b> for account settings, the used presenter to send data to view in a MVP architecture.
-            <li>Researched and complied parts of <b>Material-UI library</b> into BlackBerry Calendar.
-            </li>
-          </ul>
+          <div class="jobitem">
+            <h3 class="inline"> <i> </i>
+              <b>Blackberry</b> | <i>Android Developer</i>
+            </h3>
+            <span class="date float-right">Fall 2017  </span>
+            <br>Tools: Java, Intellij, Android, Angular, WebRTC, ICal, CalDav, Gerrit
+            <ul class="details">
+              <li>Discovered a <b>bottleneck problem</b> at calendar row adapter, thereby added a <b>layer of abstraction</b> to calender row object making it <b>providers (Google, Exchange, Yahoo, etc) agnostic</b>.</li>
+              <li>Replaced repetitive <b>HTTP requests</b> with <b>WebRTC</b> to stream data across devices.</li>
+              <li>Implemented <b>asynchronous loading</b> for account settings(legacy issue), then used presenter to send data to view in a <b>MVP architecture</b>.
+              <li>Researched and complied parts of <b>Material-UI library</b> into BlackBerry Calendar.
+              </li>
+            </ul>
+          </div>
 
-          <h3>
-            <b class="inline">RBC Royal Bank | Cloud Developer </b>
-            <span class="date float-right">Winter 2017  </span>
-          </h3>
-          Tools: ElasticSearch, Ruby, java, Logging, Google Map API, MaxMind GeoIP
-          <ul class="details">
-            <li>Scripted an <b>ElasticSearch Pipeline</b> to look up queries' origin IP and assign Geo Coordinates. </li>
-            <li>Interface the data pipelines with <b>Dynatrace and Bluemix</b> to collect data to ElasticSearch.</li>
-            <li>Configured <b>Kibana</b> project to produce visualized report from ElasticSearch data.</li>
-          </ul>
+          <div class="jobitem">
+            <h3>
+              <b class="inline">RBC Royal Bank</b> | <i>Cloud Developer </i>
+              <span class="date float-right">Winter 2017  </span>
+            </h3>
+            Tools: ElasticSearch, Ruby, java, Logging, Google Map API, MaxMind GeoIP
+            <ul class="details">
+              <li>Scripted an <b>ElasticSearch pipeline</b> to look up queries' origin IP and assign Geo Coordinates. </li>
+              <li>Interface the data pipelines with <b>Dynatrace and Bluemix</b> to collect data to ElasticSearch.</li>
+              <li>Configured <b>Kibana</b> project to produce visualized report from ElasticSearch data.</li>
+            </ul>
+          </div>
         </section>
 
         <section id="proj">
           <h5><i class="fa fa-tasks"></i> PROJECTS</h5>
-          <a href="https://github.com/hachyEgg/hachy-android/blob/master/README.md">
+        <div class="jobitem">
+        <a href="https://github.com/hachyEgg/hachy-android/blob/master/README.md" style="text-decoration: underline; text-decoration-color: black">
           <h2 style="text-decoration: underline; text-decoration-color: black">
-            <b>Hachy &mdash; Candle Egg with Machine Learning</b>
+            <b>Hachy &mdash; Candle Egg with Machine Learning</b> <i class="fa fa-link"></i>
             <span class="date float-right">Summer 2018</span></h2>
             Microsoft Image Cup World Finalist, 3<sup>rd</sup> place in Canada
-          <ul>
+          </a>
+            <ul>
             <li>Built an <b>android</b> app to scan the eggs and return development status. </li>
-            <li>Conducted experiments with two teams in China to develop <b>a methodology in identifying features in egg development</b>. </li>
+            <li>Conducted labs to develop <b>a methodology to identify features in egg development</b>. </li>
             <li>Trained a <b>tensorflow image classifier</b> with 2000 images of eggs obtained in labs to classify eggs into early, middle and late stages. </li>
-            <li>Engineered <b>Rest API</b> for the <b>NodeJS</b> backend hosted on <b>Azure</b> using its continous delivery service. </li>
+            <li>Engineered <b>Rest API</b> for the <b>NodeJS</b> backend hosted on <b>Azure</b> using continous delivery. </li>
           </ul>
-        </a>
+
+        </div>
+
+        <div class="jobitem">
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:6318278526176940033">
           <h2 style="text-decoration: underline; text-decoration-color: black">
             <b>Stream &mdash; Aquire Ethereum Talent </b>
+            <i class="fa fa-link"></i>
             <span class="date float-right">Fall 2017  </span>
           </h2>
+        </a>
           <ul>
             <li> Won 3<sup>rd</sup> place out of 75 at RBC NGI Hackathon for creating an online <b>ethereum</b> talent aquisition platform based on <b>Solidity</b> for RBC. </li>
           </ul>
-        </a>
+
+        </div>
+        <div class="jobitem">
           <a href="https://devpost.com/software/peeker">
           <h2 style="text-decoration: underline; text-decoration-color: black">
-              <b>Peek &mdash;Eye for the Colorblind </b> <span class="date float-right">Summer 2017  </span>
+              <b>Peek &mdash;Eye for the Colorblind </b> <i class="fa fa-link"></i> <span class="date float-right">Summer 2017  </span>
           </h2>
+          </a>
           <ul>
             <li>Won 3<sup>rd</sup> out of 35 for building an android app that
               <b>detects colors of objects </b> in realtime.
             </li>
           </ul>
-        </a>
+
+        </div>
         </section>
-
-        <div class="small"> </div>
-
-
-
       </div>
 
 	  <div id="sidebar">
@@ -135,7 +158,7 @@
 
       <section>
         <h5><i class="fa fa-graduation-cap"></i>EDUCATION</h5>
-        <p class="inline"><b>2A - Mechatronics Engineering<br>University of WATERLOO</b></p>
+        <h6 class="inline"><b>2A - Mechatronics Engineering<br>University of WATERLOO</b></h6>
         <br><br>
         <h6>Technical certificates: </h6>
         <ul>
@@ -153,12 +176,14 @@
         <h5 class="interests"> <i class="fa fa-heart"></i>  INTERESTS</h5>
         <ul>
           <li><b>Computer Vision</b><br>
-            Built 3 award winning apps with computer vision and image classification. </li>
+            Built 3 award winning apps with computer vision. </li>
         <li><b>Japanese Culture</b><br>
-            Founded and grew Japanese Culture Society to 50 members, partnered with Japanese Canadian foundation </li>
+            Founded and grew Japanese club to 50 people, partnered with Japanese Canadian foundation </li>
         <li><b>History</b><br>
-			Knows all the empires: Byzantine, Ottoman etc.
-		</li>
+      Knows all the empires: Byzantine, Ottoman etc.
+      <li><b>Games</b><br>
+        Counter Strike(pro at 1.6, meh at GO), <br>Starcraft (the classic one), <br>Hearts of Iron, Europa Unviersalis
+		  </li>
         </ul>
 
       </section>
