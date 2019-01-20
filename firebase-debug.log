@@ -1,0 +1,87 @@
+[debug] [2019-01-20T21:49:29.931Z] ----------------------------------------------------------------------
+[debug] [2019-01-20T21:49:29.940Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\eugene\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2019-01-20T21:49:29.941Z] CLI Version:   3.18.4
+[debug] [2019-01-20T21:49:29.941Z] Platform:      win32
+[debug] [2019-01-20T21:49:29.941Z] Node Version:  v7.4.0
+[debug] [2019-01-20T21:49:29.942Z] Time:          Sun Jan 20 2019 16:49:29 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T21:49:29.943Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-20T21:49:30.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-20T21:49:30.004Z] > authorizing via signed-in user
+[debug] [2019-01-20T21:49:30.010Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-01-20T21:49:30.011Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/IxAIiRZxE0JP36yNw7KBU3C6hA2n-tXfFjep3M4zqhQ',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jan 20 2019 16:49:30 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T21:49:30.340Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-20T21:49:30.384Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/eugsland  
+  
+ Sun Jan 20 2019 16:49:30 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T21:49:30.794Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-20T21:49:30.795Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/eugsland/tokens  
+  
+ Sun Jan 20 2019 16:49:30 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T21:49:31.173Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'eugsland'...
+[info] 
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-01-20T22:47:57.678Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-01-20T22:47:57.678Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/IxAIiRZxE0JP36yNw7KBU3C6hA2n-tXfFjep3M4zqhQ',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jan 20 2019 17:47:57 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T22:47:57.891Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-20T22:47:57.988Z] >>> HTTP REQUEST PUT https://eugsland.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+ 
+ Sun Jan 20 2019 17:47:57 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T22:47:58.346Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database eugsland is valid
+[debug] [2019-01-20T22:47:58.349Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/eugsland  
+  
+ Sun Jan 20 2019 17:47:58 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T22:47:58.739Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-01-20T22:47:58.749Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/eugsland:test  
+ { source: { files: [ [Object] ] } } 
+ Sun Jan 20 2019 17:47:58 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T22:47:58.895Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[info] i  storage: uploading rules storage.rules...
+[debug] [2019-01-20T22:47:58.902Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/eugsland/rulesets  
+ { source: { files: [ [Object] ] } } 
+ Sun Jan 20 2019 17:47:58 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T22:47:59.338Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-20T22:47:59.338Z] [rules] created ruleset projects/eugsland/rulesets/64226ae1-5229-4c99-9c29-191b8be8a601
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2019-01-20T22:47:59.960Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/eugsland/uploads/-LWhRk4lSkXMounl5KbR?fileCount=14&message=  
+  
+ Sun Jan 20 2019 17:47:59 GMT-0500 (Eastern Standard Time)
+[debug] [2019-01-20T22:48:02.093Z] <<< HTTP RESPONSE 410
+[debug] [2019-01-20T22:48:02.093Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2019-01-20T22:48:02.095Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (C:\Users\eugene\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:10:12)
+    at Request._callback (C:\Users\eugene\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:47:25)
+    at Request.self.callback (C:\Users\eugene\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (C:\Users\eugene\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1163:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (C:\Users\eugene\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1085:12)
+    at Object.onceWrapper (events.js:290:19)
+[error] 
+[error] Error: An unexpected error has occurred.
